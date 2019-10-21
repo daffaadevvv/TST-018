@@ -47,6 +47,8 @@ def twitterHandler(username):
             }
         }
     elif following and not(followers):
+        text = 'Hi @' + username + ' please follow me because you havent follow me yet'
+        _ = api.PostUpdate(status=text)
         data = {
             'code': 200,
             'message': 'Request Success',
@@ -56,6 +58,7 @@ def twitterHandler(username):
             }
         }
     elif not(following) and followers:
+        _ = api.CreateFriendship(username)
         data = {
             'code': 200,
             'message': 'Request Success',
@@ -92,3 +95,4 @@ def friendship(username):
 
 if __name__ == "__main__":
     app.run()
+
