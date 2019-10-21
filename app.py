@@ -58,7 +58,6 @@ def twitterHandler(username):
             }
         }
     elif not(following) and followers:
-        _ = api.CreateFriendship(username)
         data = {
             'code': 200,
             'message': 'Request Success',
@@ -91,7 +90,7 @@ def friendship(username):
         data = twitterHandler(username)
         return response_api(data)
     except Exception as e:
-        raise e
+        return e
 
 if __name__ == "__main__":
     app.run()
