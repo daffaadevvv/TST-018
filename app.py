@@ -2,10 +2,10 @@ from __future__ import print_function
 from flask import Flask, Response, redirect, request, jsonify
 import twitter
 
-CONSUMER_KEY = 'NtSd91Sg1FTL89OWWG8AKZtbb'
-CONSUMER_SECRET = 'vNO3U5p8LwYd5yLzNobM7Pv9pND58mUyRZMmSszq982OT5llTu'
-ACCESS_TOKEN = '216299873-JxwWo6jF0CYw2ZSVjGWjumiIrQzl9UVlq3ykhtmy'
-ACCESS_SECRET = 'Im00D6v4rw75JC3uY1YNOgy5XCBaLwvwDMnKRdQ0o74zz'
+CONSUMER_KEY = 'CONSUMER_KEY'
+CONSUMER_SECRET = 'CONSUMER_SECRET'
+ACCESS_TOKEN = 'ACCESS_TOKEN'
+ACCESS_SECRET = 'ACCESS_SECRET'
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
